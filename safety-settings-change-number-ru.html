@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="css/main.min.css">
+
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.1/i18n/jquery-ui-i18n.min.js"></script>
+
+  <script src="js/main.min.js" defer></script>
+
+  <title>TheKalibris</title>
+</head>
+<body>
+<header class="wow animate__animated animate__fadeInDown header header--account">
+  <div class="container">
+    <div class="animate__animated animate__fadeInDown animate__fast header__top">
+      <nav class="menu menu--ru menu--account">
+        <a class="logo" href="account-ru.html">
+          <img class="logo__image" src="images/logo.svg" alt="Logotype">
+          <span class="logo__name">TheKalibris</span>
+        </a>
+
+        <div class="menu__wrapper">
+          <span class="menu__burger"></span>
+
+          <ul class="menu__list">
+            <li class="menu__item">
+              <a class="menu__link" href="account-ru.html">Мои счета</a>
+            </li>
+
+            <li class="menu__item">
+              <a class="menu__link" href="cards-ru.html">Карты</a>
+            </li>
+
+            <li class="menu__item">
+              <a class="menu__link" href="refill-ru.html">Пополнение счета</a>
+            </li>
+
+            <li class="menu__item">
+              <a class="menu__link" href="#">Переводы</a>
+            </li>
+
+            <li class="menu__item">
+              <a class="menu__link" href="exchange-ru.html">Обмен валют</a>
+            </li>
+
+            <li class="menu__item">
+              <a class="menu__link" href="history-ru.html">История операций</a>
+            </li>
+
+            <li class="menu__item menu__item--last">
+              <a class="menu__link" href="payments-ru.html">Прием платежей</a>
+            </li>
+
+            <li class="menu__speeches">
+              <a class="menu__speech" href="#">En</a>
+              <a class="menu__speech" href="#">He</a>
+              <a class="menu__speech" href="#">Ru</a>
+            </li>
+          </ul>
+
+          <div class="menu__settings">
+            <button class="menu__user" type="button">User123</button>
+
+            <ul class="menu__settings-list">
+              <li class="menu__settings-listItem">
+                <a href="verification-ru.html" class="menu__settings-listLink">Верификация</a>
+              </li>
+
+              <li class="menu__settings-listItem">
+                <a href="change-password-ru.html" class="menu__settings-listLink">Смена пароля</a>
+              </li>
+
+              <li class="menu__settings-listItem">
+                <a href="safety-settings-ru.html" class="menu__settings-listLink">Настройка безопасности</a>
+              </li>
+
+              <li class="menu__settings-listItem">
+                <a href="authorization-history-ru.html" class="menu__settings-listLink">История авторизаций</a>
+              </li>
+
+              <li class="menu__settings-listItem exit">
+                <a href="#" class="menu__settings-listLink">Выход</a>
+              </li>
+            </ul>
+          </div>
+
+          <select class="menu__langs">
+            <option class="menu__lang" data-ref="#">En</option>
+            <option class="menu__lang" data-ref="#" selected>Ru</option>
+            <option class="menu__lang" data-ref="#">He</option>
+          </select>
+        </div>
+      </nav>
+    </div>
+  </div>
+</header>
+
+<main class="main">
+
+  <section class="change-data">
+    <div class="container">
+      <div class="change-data__inner">  
+        <h3 class="title change-data__title">Изменение номера</h3>
+        <form class="info-form" action="#">
+          <p class="change-data__tip">
+            Сейчас у вас активирован номер <span>+79138257050</span>.  Введите номер мобильного телефона, который хотите использовать для получения SMS Паролей.
+          </p>
+          <div class="info-form__box">
+            <div class="info-form__item info-form__phone-item">
+              <p class="info-form__item-text">Номер телефона <span>*</span></p>
+              <div class="info-form__input-box">
+                <input class="info-form__input" type="tel" value="+79131233212">
+              </div>
+            </div>
+            <div class="info-form__item info-form__select-item">
+              <p class="info-form__item-text">Способ подтверждения <span>*</span></p>
+              <select class="info-form__select" id="options">
+                <option class="is-email" value="is-email">По электронной почте</option>
+                <option class="is-tel" value="is-tel">SMS подтверждение</option>
+              </select>
+            </div>
+            <div class="info-form__option enter-code" id="is-email">
+              <h4 class="info-form__option-title enter-code__title">Введите код</h4>
+              <div class="info-form__item">
+                <p class="info-form__item-text">Код из письма <span>*</span></p>
+                <div class="info-form__input-box">
+                  <input class="info-form__input" type="text" value="***************">
+                </div>
+              </div>
+            </div>
+            <div class="info-form__option enter-code" id="is-tel">
+              <h4 class="info-form__option-title enter-code__title">Введите код</h4>
+              <p class="info-form__option-text">
+                Проверочный код отправлен +7 913 123 32 12
+              </p>
+              <div class="info-form__input-items">
+                <input class="info-form__input-item" type="text">
+                <input class="info-form__input-item" type="text">
+                <input class="info-form__input-item" type="text">
+                <input class="info-form__input-item" type="text">
+                <input class="info-form__input-item" type="text">
+                <input class="info-form__input-item" type="text">
+              </div>
+              <button class="info-form__send-again-btn">Отправить еще раз</button>
+            </div>
+          </div>
+
+          <div class="change-data__status">
+            <h4 class="change-data__status-title">Статус</h4>
+            <p class="change-data__status-text">
+              Новый мобильный номер успешно активирован!
+            </p>
+          </div>
+          <div class="info-form__buttons-box">
+            <a class="change-data__return-btn" href="#">Назад</a>
+            <button class="change-data__accept-btn">Подтвердить</button>
+          </div>
+          <a class="change-data__back-btn" href="account-ru.html">На главную</a>
+        </form>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer footer--ru">
+  <div class="container">
+    <div class="footer__inner">
+      <a class="footer__logo" href="index-ru.html">
+        <img class="footer__logo-img" src="images/logo.svg" alt="Logotype">
+        <span class="footer__logo-name">TheKalibris</span>
+      </a>
+
+      <div class="footer__content">
+        <ul class="footer__list">
+          <li class="footer__item">
+            <a class="footer__link" href="index-ru.html">Главная</a>
+          </li>
+
+          <li class="footer__item">
+            <a class="footer__link" href="how-work-ru.html">Информация</a>
+          </li>
+
+          <li class="footer__item">
+            <a class="footer__link" href="about-ru.html">О компании</a>
+          </li>
+
+          <li class="footer__item">
+            <a class="footer__link" href="contact-ru.html">Контакты</a>
+          </li>
+
+          <li class="footer__item">
+            <a class="footer__link" href="why-us-ru.html">Преимущества</a>
+          </li>
+
+          <li class="footer__item">
+            <a class="footer__link" href="prepaid-card-ru.html">Дебетовая карта</a>
+          </li>
+
+          <li class="footer__item">
+            <a class="footer__link" href="fees-ru.html">Комиссия</a>
+          </li>
+        </ul>
+
+        <div class="footer__contact">
+          <div class="footer__contact-item">
+            <span>Свяжитесь с нами:</span>
+            <a href="mailto:Support@thekalibris.com">Support@thekalibris.com</a>
+          </div>
+
+          <div class="footer__contact-item">
+            <span>Рабочее время:</span>
+            9:00 - 23:00 (каждый день, без выходных)
+          </div>
+
+          <div class="footer__contact-item">
+            <span>TheKalibris © Все права защищены</span>
+            2015-2021
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+</body>
+</html>

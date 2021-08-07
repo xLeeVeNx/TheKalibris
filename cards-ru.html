@@ -1,0 +1,345 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="css/main.min.css">
+
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.1/i18n/jquery-ui-i18n.min.js"></script>
+
+  <script src="js/main.min.js" defer></script>
+
+  <title>TheKalibris</title>
+</head>
+<body>
+<header class="wow animate__animated animate__fadeInDown header header--account">
+  <div class="container">
+    <div class="animate__animated animate__fadeInDown animate__fast header__top">
+      <nav class="menu menu--ru menu--account">
+        <a class="logo" href="account-ru.html">
+          <img class="logo__image" src="images/logo.svg" alt="Logotype">
+          <span class="logo__name">TheKalibris</span>
+        </a>
+
+        <div class="menu__wrapper">
+          <span class="menu__burger"></span>
+
+          <ul class="menu__list">
+            <li class="menu__item">
+              <a class="menu__link" href="account-ru.html">Мои счета</a>
+            </li>
+
+            <li class="menu__item menu__item--active">
+              <a class="menu__link" href="cards-ru.html">Карты</a>
+            </li>
+
+            <li class="menu__item">
+              <a class="menu__link" href="refill-ru.html">Пополнение счета</a>
+            </li>
+
+            <li class="menu__item">
+              <a class="menu__link" href="#">Переводы</a>
+            </li>
+
+            <li class="menu__item">
+              <a class="menu__link" href="exchange-ru.html">Обмен валют</a>
+            </li>
+
+            <li class="menu__item">
+              <a class="menu__link" href="history-ru.html">История операций</a>
+            </li>
+
+            <li class="menu__item menu__item--last">
+              <a class="menu__link" href="payments-ru.html">Прием платежей</a>
+            </li>
+
+            <li class="menu__speeches">
+              <a class="menu__speech" href="#">En</a>
+              <a class="menu__speech" href="#">He</a>
+              <a class="menu__speech" href="#">Ru</a>
+            </li>
+          </ul>
+
+          <div class="menu__settings">
+            <button class="menu__user" type="button">User123</button>
+
+            <ul class="menu__settings-list">
+              <li class="menu__settings-listItem">
+                <a href="verification-ru.html" class="menu__settings-listLink">Верификация</a>
+              </li>
+
+              <li class="menu__settings-listItem">
+                <a href="change-password-ru.html" class="menu__settings-listLink">Смена пароля</a>
+              </li>
+
+              <li class="menu__settings-listItem">
+                <a href="safety-settings-ru.html" class="menu__settings-listLink">Настройка безопасности</a>
+              </li>
+
+              <li class="menu__settings-listItem">
+                <a href="authorization-history-ru.html" class="menu__settings-listLink">История авторизаций</a>
+              </li>
+
+              <li class="menu__settings-listItem exit">
+                <a href="#" class="menu__settings-listLink">Выход</a>
+              </li>
+            </ul>
+          </div>
+
+          <select class="menu__langs">
+            <option class="menu__lang" data-ref="#">En</option>
+            <option class="menu__lang" data-ref="#" selected>Ru</option>
+            <option class="menu__lang" data-ref="#">He</option>
+          </select>
+        </div>
+      </nav>
+    </div>
+  </div>
+</header>
+
+<main class="main">
+  <section class="cards">
+    <div class="container">
+      <div class="cards__inner">
+        <div class="cards__items">
+          <div class="cards__item">
+            <img class="cards__image" src="images/cards/3.png" alt="Карта">
+
+            <div class="cards__content">
+              <h3 class="cards__title">Пластиковая карта TheKalibris</h3>
+
+              <div class="cards__box cards__box--first">
+                <div class="cards__name">Visa, EUR</div>
+                <div class="cards__name">2% + 2 EUR</div>
+                <div class="cards__text">Тип карты и валюта</div>
+                <div class="cards__text">Снятие наличных в банкомате</div>
+              </div>
+
+              <div class="cards__box">
+                <button class="cards__button" type="button">Заказать карту</button>
+                <div class="cards__select">
+                  <div class="cards__select-value tarlim">Посмотреть тариф</div>
+                </div>
+              </div>
+
+              <div class="accounts__card-tarlim">
+                <div class="accounts__card-tariff tariff">
+                  <h4 class="tariff__title">Тарифы</h4>
+
+                  <div class="tariff__items">
+                    <div class="tariff__subtitle">Выпуск и доставка карты</div>
+
+                    <div class="tariff__item">
+                      <div class="tariff__text">Выпуск карты</div>
+                      <div class="tariff__price"><span>5</span> EUR</div>
+                    </div>
+
+                    <div class="tariff__item">
+                      <div class="tariff__text">Доставка карты</div>
+                      <div class="tariff__price"><span>10</span> EUR</div>
+                    </div>
+
+                    <div class="tariff__item">
+                      <div class="tariff__text">Верификация держателя карт (KYC)</div>
+                      <div class="tariff__price"><span>2.50</span> EUR</div>
+                    </div>
+                  </div>
+
+                  <div class="tariff__items">
+                    <div class="tariff__subtitle">Обслуживание карты</div>
+
+                    <div class="tariff__item">
+                      <div class="tariff__text">Выпуск карты</div>
+                      <div class="tariff__price"><span>3</span> EUR</div>
+                    </div>
+
+                    <div class="tariff__item">
+                      <div class="tariff__text">Доставка карты</div>
+                      <div class="tariff__price"><span>1</span> EUR</div>
+                    </div>
+
+                    <div class="tariff__item">
+                      <div class="tariff__text">Верификация держателя карт (KYC)</div>
+                      <div class="tariff__price"><span>2% + 2</span> EUR</div>
+                    </div>
+
+                    <div class="tariff__item">
+                      <div class="tariff__text">Выпуск карты</div>
+                      <div class="tariff__price"><span>0.25</span> EUR</div>
+                    </div>
+
+                    <div class="tariff__item">
+                      <div class="tariff__text">Доставка карты</div>
+                      <div class="tariff__price"><span>30</span> EUR</div>
+                    </div>
+
+                    <div class="tariff__item">
+                      <div class="tariff__text">Верификация держателя карт (KYC)</div>
+                      <div class="tariff__price"><span>1%</span> EUR</div>
+                    </div>
+
+                    <div class="tariff__item">
+                      <div class="tariff__text">Верификация держателя карт (KYC)</div>
+                      <div class="tariff__price"><span>2%</span> EUR</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="cards__item">
+            <img class="cards__image" src="images/cards/4.png" alt="Карта">
+
+            <div class="cards__content">
+              <h3 class="cards__title">Виртуальная карта TheKalibris</h3>
+
+              <div class="cards__box cards__box--first">
+                <div class="cards__name">Visa, EUR</div>
+                <div class="cards__name">0% комиссия</div>
+                <div class="cards__text">Тип карты и валюта</div>
+                <div class="cards__text">Оплата в интернете</div>
+              </div>
+
+              <div class="cards__box">
+                <button class="cards__button" type="button">Заказать карту</button>
+                <div class="cards__select">
+                  <div class="cards__select-value tarlim">Посмотреть тариф</div>
+                </div>
+              </div>
+
+              <div class="accounts__card-tarlim">
+                <div class="accounts__card-tariff tariff">
+                  <h4 class="tariff__title">Тарифы</h4>
+
+                  <div class="tariff__items">
+                    <div class="tariff__subtitle">Выпуск и доставка карты</div>
+
+                    <div class="tariff__item">
+                      <div class="tariff__text">Выпуск карты</div>
+                      <div class="tariff__price"><span>5</span> EUR</div>
+                    </div>
+
+                    <div class="tariff__item">
+                      <div class="tariff__text">Доставка карты</div>
+                      <div class="tariff__price"><span>10</span> EUR</div>
+                    </div>
+
+                    <div class="tariff__item">
+                      <div class="tariff__text">Верификация держателя карт (KYC)</div>
+                      <div class="tariff__price"><span>2.50</span> EUR</div>
+                    </div>
+                  </div>
+
+                  <div class="tariff__items tariff__items--last">
+                    <div class="tariff__subtitle">Обслуживание карты</div>
+
+                    <div class="tariff__item">
+                      <div class="tariff__text">Выпуск карты</div>
+                      <div class="tariff__price"><span>3</span> EUR</div>
+                    </div>
+
+                    <div class="tariff__item">
+                      <div class="tariff__text">Доставка карты</div>
+                      <div class="tariff__price"><span>1</span> EUR</div>
+                    </div>
+
+                    <div class="tariff__item">
+                      <div class="tariff__text">Верификация держателя карт (KYC)</div>
+                      <div class="tariff__price"><span>2% + 2</span> EUR</div>
+                    </div>
+
+                    <div class="tariff__item">
+                      <div class="tariff__text">Выпуск карты</div>
+                      <div class="tariff__price"><span>0.25</span> EUR</div>
+                    </div>
+
+                    <div class="tariff__item">
+                      <div class="tariff__text">Доставка карты</div>
+                      <div class="tariff__price"><span>30</span> EUR</div>
+                    </div>
+
+                    <div class="tariff__item">
+                      <div class="tariff__text">Верификация держателя карт (KYC)</div>
+                      <div class="tariff__price"><span>1%</span> EUR</div>
+                    </div>
+
+                    <div class="tariff__item">
+                      <div class="tariff__text">Верификация держателя карт (KYC)</div>
+                      <div class="tariff__price"><span>2%</span> EUR</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer footer--ru">
+  <div class="container">
+    <div class="footer__inner">
+      <a class="footer__logo" href="index-ru.html">
+        <img class="footer__logo-img" src="images/logo.svg" alt="Logotype">
+        <span class="footer__logo-name">TheKalibris</span>
+      </a>
+
+      <div class="footer__content">
+        <ul class="footer__list">
+          <li class="footer__item">
+            <a class="footer__link" href="index-ru.html">Главная</a>
+          </li>
+
+          <li class="footer__item">
+            <a class="footer__link" href="how-work-ru.html">Информация</a>
+          </li>
+
+          <li class="footer__item">
+            <a class="footer__link" href="about-ru.html">О компании</a>
+          </li>
+
+          <li class="footer__item">
+            <a class="footer__link" href="contact-ru.html">Контакты</a>
+          </li>
+
+          <li class="footer__item">
+            <a class="footer__link" href="why-us-ru.html">Преимущества</a>
+          </li>
+
+          <li class="footer__item">
+            <a class="footer__link" href="prepaid-card-ru.html">Дебетовая карта</a>
+          </li>
+
+          <li class="footer__item">
+            <a class="footer__link" href="fees-ru.html">Комиссия</a>
+          </li>
+        </ul>
+
+        <div class="footer__contact">
+          <div class="footer__contact-item">
+            <span>Свяжитесь с нами:</span>
+            <a href="mailto:Support@thekalibris.com">Support@thekalibris.com</a>
+          </div>
+
+          <div class="footer__contact-item">
+            <span>Рабочее время:</span>
+            9:00 - 23:00 (каждый день, без выходных)
+          </div>
+
+          <div class="footer__contact-item">
+            <span>TheKalibris © Все права защищены</span>
+            2015-2021
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+</body>
+</html>

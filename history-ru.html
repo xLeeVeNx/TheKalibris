@@ -1,0 +1,302 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="css/main.min.css">
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.1/i18n/jquery-ui-i18n.min.js"></script>
+
+  <script src="js/main.min.js" defer></script>
+
+  <title>TheKalibris</title>
+</head>
+<body>
+<header class="wow animate__animated animate__fadeInDown header header--account">
+  <div class="container">
+    <div class="animate__animated animate__fadeInDown animate__fast header__top">
+      <nav class="menu menu--ru menu--account">
+        <a class="logo" href="account-ru.html">
+          <img class="logo__image" src="images/logo.svg" alt="Logotype">
+          <span class="logo__name">TheKalibris</span>
+        </a>
+
+        <div class="menu__wrapper">
+          <span class="menu__burger"></span>
+
+          <ul class="menu__list">
+            <li class="menu__item">
+              <a class="menu__link" href="account-ru.html">Мои счета</a>
+            </li>
+
+            <li class="menu__item">
+              <a class="menu__link" href="cards-ru.html">Карты</a>
+            </li>
+
+            <li class="menu__item">
+              <a class="menu__link" href="refill-ru.html">Пополнение счета</a>
+            </li>
+
+            <li class="menu__item">
+              <a class="menu__link" href="#">Переводы</a>
+            </li>
+
+            <li class="menu__item">
+              <a class="menu__link" href="exchange-ru.html">Обмен валют</a>
+            </li>
+
+            <li class="menu__item menu__item--active">
+              <a class="menu__link" href="history-ru.html">История операций</a>
+            </li>
+
+            <li class="menu__item menu__item--last">
+              <a class="menu__link" href="payments-ru.html">Прием платежей</a>
+            </li>
+
+            <li class="menu__speeches">
+              <a class="menu__speech" href="#">En</a>
+              <a class="menu__speech" href="#">He</a>
+              <a class="menu__speech" href="#">Ru</a>
+            </li>
+          </ul>
+
+          <div class="menu__settings">
+            <button class="menu__user" type="button">User123</button>
+
+            <ul class="menu__settings-list">
+              <li class="menu__settings-listItem">
+                <a href="verification-ru.html" class="menu__settings-listLink">Верификация</a>
+              </li>
+
+              <li class="menu__settings-listItem">
+                <a href="change-password-ru.html" class="menu__settings-listLink">Смена пароля</a>
+              </li>
+
+              <li class="menu__settings-listItem">
+                <a href="safety-settings-ru.html" class="menu__settings-listLink">Настройка безопасности</a>
+              </li>
+
+              <li class="menu__settings-listItem">
+                <a href="authorization-history-ru.html" class="menu__settings-listLink">История авторизаций</a>
+              </li>
+
+              <li class="menu__settings-listItem exit">
+                <a href="#" class="menu__settings-listLink">Выход</a>
+              </li>
+            </ul>
+          </div>
+
+          <select class="menu__langs">
+            <option class="menu__lang" data-ref="#">En</option>
+            <option class="menu__lang" data-ref="#" selected>Ru</option>
+            <option class="menu__lang" data-ref="#">He</option>
+          </select>
+        </div>
+      </nav>
+    </div>
+  </div>
+</header>
+
+<main class="main">
+  <section class="history">
+    <div class="container">
+      <div class="wow animate__animated animate__fadeIn accounts__operations">
+        <h3 class="title">История операций</h3>
+
+        <div class="history__filter filter">
+          <form class="filter__form" action="#">
+            <div class="filter__inner">
+              <div class="filter__left">
+                <div class="filter__box">
+                  <label class="filter__label">Период</label>
+                  <div class="filter__select">Последние 7 дней</div>
+                </div>
+
+                <div class="filter__box filter__box--select">
+                  <label class="filter__label">Счёт</label>
+                  <select class="info-form__select">
+                    <option>Все счета</option>
+                    <option>448 EUR</option>
+                    <option>13 700 USD</option>
+                    <option>24 850 RUR</option>
+                    <option>0,07 BTC</option>
+                    <option>0,3 ETH</option>
+                    <option>130 USDT ERC20</option>
+                    <option>2 BNB</option>
+                    <option>349 USDT TRC20</option>
+                  </select>
+                </div>
+              </div>
+              <div class="filter__right">
+                <div class="filter__box">
+                  <label class="filter__label">По дате</label>
+                  <div class="filter__selects">
+                    <div class="filter__select-date">
+                      <input class="filter__select filter__select&#45;&#45;date" id="datepicker1" type="text" value="12.07.2021">
+                    </div>
+
+                    <div class="filter__select-date">
+                      <input class="filter__select filter__select&#45;&#45;date" id="datepicker2" type="text" value="19.07.2021">
+                    </div>
+                  </div>
+                </div>
+
+                <div class="filter__box">
+                  <label class="filter__label">Корреспондент</label>
+                  <input class="filter__input" type="text">
+                </div>
+              </div>
+            </div>
+
+            <div class="filter__status">
+              <div class="filter__status-title">Статус операции</div>
+
+              <div class="filter__checkboxes">
+                <label class="filter__checkbox-label">
+                  <div class="filter__wrap">
+                    <input class="filter__checkbox-ill" type="checkbox">
+                    <span class="filter__checkbox"></span>
+                  </div>
+
+                  <span class="filter__checkbox-text">Все</span>
+                </label>
+
+                <label class="filter__checkbox-label">
+                  <div class="filter__wrap">
+                    <input class="filter__checkbox-ill" type="checkbox">
+                    <span class="filter__checkbox"></span>
+                  </div>
+
+                  <span class="filter__checkbox-text">Исполненные</span>
+                </label>
+
+                <label class="filter__checkbox-label">
+                  <div class="filter__wrap">
+                    <input class="filter__checkbox-ill" type="checkbox">
+                    <span class="filter__checkbox"></span>
+                  </div>
+
+                  <span class="filter__checkbox-text">Отмененные</span>
+                </label>
+
+                <label class="filter__checkbox-label">
+                  <div class="filter__wrap">
+                    <input class="filter__checkbox-ill" type="checkbox">
+                    <span class="filter__checkbox"></span>
+                  </div>
+
+                  <span class="filter__checkbox-text">В обработке</span>
+                </label>
+              </div>
+            </div>
+
+            <button class="filter__button" type="submit">Применить фильтр</button>
+          </form>
+        </div>
+
+        <ul class="accounts__operations-items">
+          <li class="accounts__operations-item">
+            <div class="accounts__operations-title">Дата</div>
+            <div class="accounts__operations-title">Тип операции</div>
+            <div class="accounts__operations-title">Корреспондент</div>
+            <div class="accounts__operations-title">Сумма</div>
+            <div class="accounts__operations-title">Статус</div>
+          </li>
+
+          <li class="accounts__operations-item">
+            <div class="accounts__operations-text">10 Июля, 12:30</div>
+            <div class="accounts__operations-text">Внутренняя транзакция</div>
+            <div class="accounts__operations-text">H907061936736</div>
+            <div class="accounts__operations-text">300 USD</div>
+            <div class="accounts__operations-text">Исполнено</div>
+          </li>
+
+          <li class="accounts__operations-item">
+            <div class="accounts__operations-text">4 Июля, 22:15</div>
+            <div class="accounts__operations-text">Mastercard</div>
+            <div class="accounts__operations-text">TheKalibris</div>
+            <div class="accounts__operations-text">50 EUR</div>
+            <div class="accounts__operations-text">Исполнено</div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer footer--ru">
+  <div class="container">
+    <div class="footer__inner">
+      <a class="footer__logo" href="index-ru.html">
+        <img class="footer__logo-img" src="images/logo.svg" alt="Logotype">
+        <span class="footer__logo-name">TheKalibris</span>
+      </a>
+
+      <div class="footer__content">
+        <ul class="footer__list">
+          <li class="footer__item">
+            <a class="footer__link" href="index-ru.html">Главная</a>
+          </li>
+
+          <li class="footer__item">
+            <a class="footer__link" href="how-work-ru.html">Информация</a>
+          </li>
+
+          <li class="footer__item">
+            <a class="footer__link" href="about-ru.html">О компании</a>
+          </li>
+
+          <li class="footer__item">
+            <a class="footer__link" href="contact-ru.html">Контакты</a>
+          </li>
+
+          <li class="footer__item">
+            <a class="footer__link" href="why-us-ru.html">Преимущества</a>
+          </li>
+
+          <li class="footer__item">
+            <a class="footer__link" href="prepaid-card-ru.html">Дебетовая карта</a>
+          </li>
+
+          <li class="footer__item">
+            <a class="footer__link" href="fees-ru.html">Комиссия</a>
+          </li>
+        </ul>
+
+        <div class="footer__contact">
+          <div class="footer__contact-item">
+            <span>Свяжитесь с нами:</span>
+            <a href="mailto:Support@thekalibris.com">Support@thekalibris.com</a>
+          </div>
+
+          <div class="footer__contact-item">
+            <span>Рабочее время:</span>
+            9:00 - 23:00 (каждый день, без выходных)
+          </div>
+
+          <div class="footer__contact-item">
+            <span>TheKalibris © Все права защищены</span>
+            2015-2021
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+    $(function () {
+        $.datepicker.setDefaults($.datepicker.regional['ru']);
+        $('#datepicker1, #datepicker2').datepicker({
+            showOn: "button",
+            buttonImage: "images/arrow-down.svg",
+            buttonImageOnly: true,
+        });
+    });
+</script>
+</body>
+</html>

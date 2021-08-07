@@ -1,0 +1,1195 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="css/main.min.css">
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.1/i18n/jquery-ui-i18n.min.js"></script>
+
+  <script src="js/main.min.js" defer></script>
+  <script src="js/copyText.js" defer></script>
+
+  <title>TheKalibris</title>
+  <link rel="stylesheet" href="scss/blocks/accounts.scss">
+</head>
+<body class="ru">
+<header class="wow animate__animated animate__fadeInDown header header--account">
+  <div class="container">
+    <div class="animate__animated animate__fadeInDown animate__fast header__top">
+      <nav class="menu menu--ru menu--account">
+        <a class="logo" href="account-ru.html">
+          <img class="logo__image" src="images/logo.svg" alt="Logotype">
+          <span class="logo__name">TheKalibris</span>
+        </a>
+
+        <div class="menu__wrapper">
+          <span class="menu__burger"></span>
+
+          <ul class="menu__list">
+            <li class="menu__item menu__item--active">
+              <a class="menu__link" href="account-ru.html">Мои счета</a>
+            </li>
+
+            <li class="menu__item">
+              <a class="menu__link" href="cards-ru.html">Карты</a>
+            </li>
+
+            <li class="menu__item">
+              <a class="menu__link" href="refill-ru.html">Пополнение счета</a>
+            </li>
+
+            <li class="menu__item">
+              <a class="menu__link" href="#">Переводы</a>
+            </li>
+
+            <li class="menu__item">
+              <a class="menu__link" href="exchange-ru.html">Обмен валют</a>
+            </li>
+
+            <li class="menu__item">
+              <a class="menu__link" href="history-ru.html">История операций</a>
+            </li>
+
+            <li class="menu__item menu__item--last">
+              <a class="menu__link" href="payments-ru.html">Прием платежей</a>
+            </li>
+
+            <li class="menu__speeches">
+              <a class="menu__speech" href="#">En</a>
+              <a class="menu__speech" href="#">He</a>
+              <a class="menu__speech" href="account-ru.html">Ru</a>
+            </li>
+          </ul>
+
+          <div class="menu__settings">
+            <button class="menu__user" type="button">User123</button>
+
+            <ul class="menu__settings-list">
+              <li class="menu__settings-listItem">
+                <a href="verification-ru.html" class="menu__settings-listLink">Верификация</a>
+              </li>
+
+              <li class="menu__settings-listItem">
+                <a href="change-password-ru.html" class="menu__settings-listLink">Смена пароля</a>
+              </li>
+
+              <li class="menu__settings-listItem">
+                <a href="safety-settings-ru.html" class="menu__settings-listLink">Настройка безопасности</a>
+              </li>
+
+              <li class="menu__settings-listItem">
+                <a href="authorization-history-ru.html" class="menu__settings-listLink">История авторизаций</a>
+              </li>
+
+              <li class="menu__settings-listItem exit">
+                <a href="#" class="menu__settings-listLink">Выход</a>
+              </li>
+            </ul>
+          </div>
+
+          <select class="menu__langs">
+            <option class="menu__lang" data-ref="#">En</option>
+            <option class="menu__lang" data-ref="account-ru.html" selected>Ru</option>
+            <option class="menu__lang" data-ref="#">He</option>
+          </select>
+        </div>
+      </nav>
+    </div>
+  </div>
+</header>
+
+<main class="main">
+  <section class="accounts">
+    <div class="container">
+      <div class="accounts__inner">
+        <div class="accounts__top">
+          <div class="wow animate__animated animate__fadeInLeft animate__fast accounts__left">
+            <div class="accounts__box">
+              <h3 class="title">Валютные счета</h3>
+
+              <ul class="accounts__list">
+                <li class="accounts__list-item">
+                  <div class="accounts__list-top">
+                    <div class="accounts__list-box">
+                      <div class="accounts__list-def">баланс</div>
+                      <div class="accounts__list-text accounts__list-text&#45;&#45;euro"><span
+                        class="accounts__list-num">448</span> EUR
+                      </div>
+                    </div>
+
+                    <div class="accounts__list-box">
+                      <div class="accounts__list-def">номер кошелька</div>
+                      <div class="accounts__list-text">E111812351241</div>
+                    </div>
+
+                    <div class="accounts__list-box">
+                      <div class="accounts__list-def">история операций</div>
+                      <a class="accounts__list-text accounts__list-text&#45;&#45;op" href="#">История операций</a>
+                    </div>
+                  </div>
+
+                  <div class="accounts__list-buttons">
+                    <a class="accounts__list-button" href="refill-ru.html">Пополнить</a>
+                    <a class="accounts__list-button" href="#">Перевести</a>
+                    <a class="accounts__list-button" href="exchange-ru.html">Обменять</a>
+                  </div>
+                </li>
+
+                <li class="accounts__list-item">
+                  <div class="accounts__list-top">
+                    <div class="accounts__list-text accounts__list-text&#45;&#45;dollar"><span
+                      class="accounts__list-num">13 700</span> USD
+                    </div>
+
+                    <div class="accounts__list-text">U123581232345</div>
+
+                    <a class="accounts__list-text accounts__list-text&#45;&#45;op" href="#">История операций</a>
+                  </div>
+
+                  <div class="accounts__list-buttons">
+                    <a class="accounts__list-button" href="refill-ru.html">Пополнить</a>
+                    <a class="accounts__list-button" href="#">Перевести</a>
+                    <a class="accounts__list-button" href="exchange-ru.html">Обменять</a>
+                  </div>
+                </li>
+
+                <li class="accounts__list-item">
+                  <div class="accounts__list-top">
+                    <div class="accounts__list-text accounts__list-text&#45;&#45;rur"><span
+                      class="accounts__list-num">24 850</span> RUR
+                    </div>
+
+                    <div class="accounts__list-text">R0151812324611</div>
+
+                    <a class="accounts__list-text accounts__list-text&#45;&#45;op" href="#">История операций</a>
+                  </div>
+
+                  <div class="accounts__list-buttons">
+                    <a class="accounts__list-button" href="refill-ru.html">Пополнить</a>
+                    <a class="accounts__list-button" href="#">Перевести</a>
+                    <a class="accounts__list-button" href="exchange-ru.html">Обменять</a>
+                  </div>
+                </li>
+              </ul>
+
+              <button class="accounts__button" type="button"><span
+                class="accounts__button-text">Добавить новый счет</span></button>
+            </div>
+
+            <div class="accounts__box">
+              <h3 class="title">Криптовалютные счета</h3>
+
+              <ul class="accounts__list" id="cryptocurrency">
+                <li class="accounts__list-item">
+                  <div class="accounts__list-top">
+                    <div class="accounts__list-box">
+                      <div class="accounts__list-def">баланс</div>
+                      <div class="accounts__list-text accounts__list-text&#45;&#45;btc"><span
+                        class="accounts__list-num">0,07</span> BTC
+                      </div>
+                    </div>
+
+                    <div class="accounts__list-box">
+                      <div class="accounts__list-def">номер кошелька</div>
+                      <div class="accounts__list-text">B12363407</div>
+                    </div>
+
+                    <div class="accounts__list-box">
+                      <div class="accounts__list-def">история операций</div>
+                      <a class="accounts__list-text accounts__list-text&#45;&#45;op" href="#">История операций</a>
+                    </div>
+                  </div>
+
+                  <div class="accounts__wallet">
+                    <span class="accounts__wallet-text">Bitcoin wallet</span>
+
+                    <div class="accounts__wallet-box">
+                      <div class="accounts__wallet-hash">bc1qqpz36vhat33exj5jnz54efw6ntsh6huzv2ngg5</div>
+                      <button class="accounts__wallet-btn" type="button">
+                        <img class="accounts__wallet-img" src="images/copy-btn.svg" alt="Копировать">
+                      </button>
+                    </div>
+                  </div>
+
+                  <div class="accounts__list-buttons">
+                    <a class="accounts__list-button" href="refill-ru.html">Пополнить</a>
+                    <a class="accounts__list-button" href="#">Перевести</a>
+                    <a class="accounts__list-button" href="exchange-ru.html">Обменять</a>
+                  </div>
+                </li>
+
+                <li class="accounts__list-item">
+                  <div class="accounts__list-top">
+                    <div class="accounts__list-text accounts__list-text&#45;&#45;eth"><span
+                      class="accounts__list-num">0,3</span> ETH
+                    </div>
+
+                    <div class="accounts__list-text">H12363411</div>
+
+                    <a class="accounts__list-text accounts__list-text&#45;&#45;op" href="#">История операций</a>
+                  </div>
+
+                  <div class="accounts__wallet">
+                    <span class="accounts__wallet-text">Etherium wallet</span>
+
+                    <div class="accounts__wallet-box">
+                      <div class="accounts__wallet-hash">bc1qqpz36vhat33exj5jnz54efw6ntsh6huzv2ngg5</div>
+                      <button class="accounts__wallet-btn" type="button">
+                        <img class="accounts__wallet-img" src="images/copy-btn.svg" alt="Копировать">
+                      </button>
+                    </div>
+                  </div>
+
+                  <div class="accounts__list-buttons">
+                    <a class="accounts__list-button" href="refill-ru.html">Пополнить</a>
+                    <a class="accounts__list-button" href="#">Перевести</a>
+                    <a class="accounts__list-button" href="exchange-ru.html">Обменять</a>
+                  </div>
+                </li>
+
+                <li class="accounts__list-item">
+                  <div class="accounts__list-top">
+                    <div class="accounts__list-text accounts__list-text&#45;&#45;usdt"><span
+                      class="accounts__list-num">130</span> USDT <span class="accounts__list-curr">TRC20</span>
+                    </div>
+
+                    <div class="accounts__list-text">T12363409</div>
+
+                    <a class="accounts__list-text accounts__list-text&#45;&#45;op" href="#">История операций</a>
+                  </div>
+
+                  <div class="accounts__wallet">
+                    <span class="accounts__wallet-text">Tether (ERC20) wallet</span>
+
+                    <div class="accounts__wallet-box">
+                      <div class="accounts__wallet-hash">bc1qqpz36vhat33exj5jnz54efw6ntsh6huzv2ngg5</div>
+                      <button class="accounts__wallet-btn" type="button">
+                        <img class="accounts__wallet-img" src="images/copy-btn.svg" alt="Копировать">
+                      </button>
+                    </div>
+                  </div>
+
+                  <div class="accounts__list-buttons">
+                    <a class="accounts__list-button" href="refill-ru.html">Пополнить</a>
+                    <a class="accounts__list-button" href="#">Перевести</a>
+                    <a class="accounts__list-button" href="exchange-ru.html">Обменять</a>
+                  </div>
+                </li>
+
+                <li class="accounts__list-item">
+                  <div class="accounts__list-top">
+                    <div class="accounts__list-text accounts__list-text&#45;&#45;btc"><span
+                      class="accounts__list-num">2</span> BNB
+                    </div>
+
+                    <div class="accounts__list-text">B123581232345</div>
+
+                    <a class="accounts__list-text accounts__list-text&#45;&#45;op" href="#">История операций</a>
+                  </div>
+
+                  <div class="accounts__wallet">
+                    <span class="accounts__wallet-text">Binance coin wallet</span>
+
+                    <div class="accounts__wallet-box">
+                      <div class="accounts__wallet-hash">bc1qqpz36vhat33exj5jnz54efw6ntsh6huzv2ngg5</div>
+                      <button class="accounts__wallet-btn" type="button">
+                        <img class="accounts__wallet-img" src="images/copy-btn.svg" alt="Копировать">
+                      </button>
+                    </div>
+                  </div>
+
+                  <div class="accounts__list-buttons">
+                    <a class="accounts__list-button" href="refill-ru.html">Пополнить</a>
+                    <a class="accounts__list-button" href="#">Перевести</a>
+                    <a class="accounts__list-button" href="exchange-ru.html">Обменять</a>
+                  </div>
+                </li>
+
+                <li class="accounts__list-item">
+                  <div class="accounts__list-top">
+                    <div class="accounts__list-text accounts__list-text&#45;&#45;usdt"><span
+                      class="accounts__list-num">349</span> USDT <span class="accounts__list-curr">TRC20</span>
+                    </div>
+
+                    <div class="accounts__list-text">Y12363413</div>
+
+                    <a class="accounts__list-text accounts__list-text&#45;&#45;op" href="#">История операций</a>
+                  </div>
+
+                  <div class="accounts__wallet">
+                    <span class="accounts__wallet-text">Tether (TRC20) wallet</span>
+
+                    <div class="accounts__wallet-box">
+                      <div class="accounts__wallet-hash">bc1qqpz36vhat33exj5jnz54efw6ntsh6huzv2ngg5</div>
+                      <button class="accounts__wallet-btn" type="button">
+                        <img class="accounts__wallet-img" src="images/copy-btn.svg" alt="Копировать">
+                      </button>
+                    </div>
+                  </div>
+
+                  <div class="accounts__list-buttons">
+                    <a class="accounts__list-button" href="refill-ru.html">Пополнить</a>
+                    <a class="accounts__list-button" href="#">Перевести</a>
+                    <a class="accounts__list-button" href="exchange-ru.html">Обменять</a>
+                  </div>
+                </li>
+              </ul>
+
+              <button class="accounts__button" type="button"><span
+                class="accounts__button-text">Добавить новый счет</span></button>
+            </div>
+          </div>
+
+          <div class="wow animate__animated animate__fadeInRight animate__fast accounts__right">
+            <h3 class="accounts__title title">Мои карты</h3>
+
+            <ul class="accounts__cards">
+              <li class="accounts__card">
+                <img class="accounts__card-img" src="images/cards/1.png" alt="Карта">
+                <div class="accounts__card-wrap">
+                  <div class="accounts__card-box">
+                    <div class="accounts__card-left">
+                      <h4 class="accounts__card-title">USD Card #1</h4>
+
+                      <div class="accounts__card-text">
+                        <p>Срок действия: 06 / 2024</p>
+                        <p>1234 **** **** 0000</p>
+                      </div>
+                    </div>
+
+                    <div class="accounts__card-right">
+                      <div class="accounts__card-price">50 <span>USD</span></div>
+
+                      <a class="accounts__card-text lock" href="#">Заблокировать</a>
+                    </div>
+                  </div>
+
+                  <div class="accounts__card-buttons">
+                    <a class="accounts__card-btn" href="refill-ru.html">Пополнить</a>
+                    <div class="accounts__card-drop tarlim">Тарифы и лимиты</div>
+                    <div class="accounts__card-drop requisites__button">Реквизиты</div>
+                  </div>
+
+                  <div class="accounts__card-tarlim">
+                    <div class="accounts__card-tariff tariff">
+                      <h4 class="tariff__title">Тарифы</h4>
+
+                      <div class="tariff__items">
+                        <div class="tariff__subtitle">Выпуск и доставка карты</div>
+
+                        <div class="tariff__item">
+                          <div class="tariff__text">Выпуск карты</div>
+                          <div class="tariff__price"><span>5</span> EUR</div>
+                        </div>
+
+                        <div class="tariff__item">
+                          <div class="tariff__text">Доставка карты</div>
+                          <div class="tariff__price"><span>10</span> EUR</div>
+                        </div>
+
+                        <div class="tariff__item">
+                          <div class="tariff__text">Верификация держателя карт (KYC)</div>
+                          <div class="tariff__price"><span>2.50</span> EUR</div>
+                        </div>
+                      </div>
+
+                      <div class="tariff__items">
+                        <div class="tariff__subtitle">Обслуживание карты</div>
+
+                        <div class="tariff__item">
+                          <div class="tariff__text">Выпуск карты</div>
+                          <div class="tariff__price"><span>3</span> EUR</div>
+                        </div>
+
+                        <div class="tariff__item">
+                          <div class="tariff__text">Доставка карты</div>
+                          <div class="tariff__price"><span>1</span> EUR</div>
+                        </div>
+
+                        <div class="tariff__item">
+                          <div class="tariff__text">Верификация держателя карт (KYC)</div>
+                          <div class="tariff__price"><span>2% + 2</span> EUR</div>
+                        </div>
+
+                        <div class="tariff__item">
+                          <div class="tariff__text">Выпуск карты</div>
+                          <div class="tariff__price"><span>0.25</span> EUR</div>
+                        </div>
+
+                        <div class="tariff__item">
+                          <div class="tariff__text">Доставка карты</div>
+                          <div class="tariff__price"><span>30</span> EUR</div>
+                        </div>
+
+                        <div class="tariff__item">
+                          <div class="tariff__text">Верификация держателя карт (KYC)</div>
+                          <div class="tariff__price"><span>1%</span> EUR</div>
+                        </div>
+
+                        <div class="tariff__item">
+                          <div class="tariff__text">Верификация держателя карт (KYC)</div>
+                          <div class="tariff__price"><span>2%</span> EUR</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accounts__card-limit limit">
+                      <h4 class="limit__title">Лимиты</h4>
+
+                      <table class="limit__table">
+                        <tr class="limit__row">
+                          <th></th>
+                          <th class="limit__head">
+                            <div>Level 1</div>
+                          </th>
+                          <th class="limit__head">
+                            <div>Level 2 *</div>
+                          </th>
+                          <th class="limit__head">
+                            <div>Level 3 *</div>
+                          </th>
+                        </tr>
+
+                        <tr class="limit__row">
+                          <th class="limit__name"><span>Оборот по карте</span></th>
+                          <td class="limit__text">
+                            <div>до <span>5 000</span> EUR / мес</div>
+                          </td>
+                          <td class="limit__text">
+                            <div>от <span>5 000</span> EUR до <span>10 000</span> / мес</div>
+                          </td>
+                          <td class="limit__text">
+                            <div>от <span>10 000</span> EUR до <span>20 000</span> / мес</div>
+                          </td>
+                        </tr>
+
+                        <tr class="limit__row">
+                          <th class="limit__name"><span>POS транзакции в день</span></th>
+                          <td class="limit__text">
+                            <div><span>2 500</span> EUR</div>
+                          </td>
+                          <td class="limit__text">
+                            <div><span>5 000</span> EUR</div>
+                          </td>
+                          <td class="limit__text">
+                            <div><span>7 500</span> EUR</div>
+                          </td>
+                        </tr>
+
+                        <tr class="limit__row">
+                          <th class="limit__name"><span>POS транзакции в месяц</span></th>
+                          <td class="limit__text">
+                            <div><span>5 000</span> EUR</div>
+                          </td>
+                          <td class="limit__text">
+                            <div><span>10 000</span> EUR</div>
+                          </td>
+                          <td class="limit__text">
+                            <div><span>20 000</span> EUR</div>
+                          </td>
+                        </tr>
+
+                        <tr class="limit__row">
+                          <th class="limit__name"><span>Онлайн транзакции в день</span></th>
+                          <td class="limit__text">
+                            <div><span>2 500</span> EUR</div>
+                          </td>
+                          <td class="limit__text">
+                            <div><span>5 000</span> EUR</div>
+                          </td>
+                          <td class="limit__text">
+                            <div><span>7 500</span> EUR</div>
+                          </td>
+                        </tr>
+
+                        <tr class="limit__row">
+                          <th class="limit__name"><span>Онлайн транзакции в месяц</span></th>
+                          <td class="limit__text">
+                            <div><span>5 000</span> EUR</div>
+                          </td>
+                          <td class="limit__text">
+                            <div><span>10 000</span> EUR</div>
+                          </td>
+                          <td class="limit__text">
+                            <div><span>20 000</span> EUR</div>
+                          </td>
+                        </tr>
+                      </table>
+
+                      <p class="limit__info">
+                        * Увеличение лимитов происходит после согласования с AML по запросу пользователя.
+                      </p>
+
+                      <button class="accounts__button tarlim__button" type="button"><span class="accounts__button-text">Скрыть Тарифы и лимиты</span>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="accounts__card-requisites requisites">
+                    <h4 class="requisites__title">Реквизиты</h4>
+
+                    <div class="requisites__items">
+                      <div class="requisites__item">
+                        <div class="requisites__name">Номер карты:</div>
+                        <div class="requisites__value">1234 5678 9000 0000</div>
+                      </div>
+
+                      <div class="requisites__item">
+                        <div class="requisites__name">Срок действия:</div>
+                        <div class="requisites__value">08/25</div>
+                      </div>
+
+                      <div class="requisites__item">
+                        <div class="requisites__name">Статус:</div>
+                        <div class="requisites__value">Активна</div>
+                      </div>
+
+                      <div class="requisites__item">
+                        <div class="requisites__name">CVV</div>
+                        <div class="requisites__value">777</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li class="accounts__card accounts__card&#45;&#45;special">
+                <img class="accounts__card-img" src="images/cards/2.png" alt="Карта">
+                <div class="accounts__card-wrap">
+                  <div class="accounts__card-box">
+                    <div class="accounts__card-left">
+                      <h4 class="accounts__card-title">USD Virtual #1</h4>
+
+                      <div class="accounts__card-text">
+                        <p>Срок действия: 06 / 2024</p>
+                        <p>1234 **** **** 0000</p>
+                      </div>
+                    </div>
+
+                    <div class="accounts__card-right">
+                      <div class="accounts__card-price">1250 <span>USD</span></div>
+
+                      <a class="accounts__card-text lock" href="#">Заблокировать</a>
+                    </div>
+                  </div>
+
+                  <div class="accounts__card-buttons">
+                    <a class="accounts__card-btn" href="refill-ru.html">Пополнить</a>
+                    <div class="accounts__card-drop tarlim">Тарифы и лимиты</div>
+                    <div class="accounts__card-drop requisites__button">Реквизиты</div>
+                  </div>
+
+                  <div class="accounts__card-tarlim">
+                    <div class="accounts__card-tariff tariff">
+                      <h4 class="tariff__title">Тарифы</h4>
+
+                      <div class="tariff__items">
+                        <div class="tariff__subtitle">Выпуск и доставка карты</div>
+
+                        <div class="tariff__item">
+                          <div class="tariff__text">Выпуск карты</div>
+                          <div class="tariff__price"><span>5</span> EUR</div>
+                        </div>
+
+                        <div class="tariff__item">
+                          <div class="tariff__text">Доставка карты</div>
+                          <div class="tariff__price"><span>10</span> EUR</div>
+                        </div>
+
+                        <div class="tariff__item">
+                          <div class="tariff__text">Верификация держателя карт (KYC)</div>
+                          <div class="tariff__price"><span>2.50</span> EUR</div>
+                        </div>
+                      </div>
+
+                      <div class="tariff__items">
+                        <div class="tariff__subtitle">Обслуживание карты</div>
+
+                        <div class="tariff__item">
+                          <div class="tariff__text">Выпуск карты</div>
+                          <div class="tariff__price"><span>3</span> EUR</div>
+                        </div>
+
+                        <div class="tariff__item">
+                          <div class="tariff__text">Доставка карты</div>
+                          <div class="tariff__price"><span>1</span> EUR</div>
+                        </div>
+
+                        <div class="tariff__item">
+                          <div class="tariff__text">Верификация держателя карт (KYC)</div>
+                          <div class="tariff__price"><span>2% + 2</span> EUR</div>
+                        </div>
+
+                        <div class="tariff__item">
+                          <div class="tariff__text">Выпуск карты</div>
+                          <div class="tariff__price"><span>0.25</span> EUR</div>
+                        </div>
+
+                        <div class="tariff__item">
+                          <div class="tariff__text">Доставка карты</div>
+                          <div class="tariff__price"><span>30</span> EUR</div>
+                        </div>
+
+                        <div class="tariff__item">
+                          <div class="tariff__text">Верификация держателя карт (KYC)</div>
+                          <div class="tariff__price"><span>1%</span> EUR</div>
+                        </div>
+
+                        <div class="tariff__item">
+                          <div class="tariff__text">Верификация держателя карт (KYC)</div>
+                          <div class="tariff__price"><span>2%</span> EUR</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accounts__card-limit limit">
+                      <h4 class="limit__title">Лимиты</h4>
+
+                      <table class="limit__table">
+                        <tr class="limit__row">
+                          <th></th>
+                          <th class="limit__head">
+                            <div>Level 1</div>
+                          </th>
+                          <th class="limit__head">
+                            <div>Level 2 *</div>
+                          </th>
+                          <th class="limit__head">
+                            <div>Level 3 *</div>
+                          </th>
+                        </tr>
+
+                        <tr class="limit__row">
+                          <th class="limit__name"><span>Оборот по карте</span></th>
+                          <td class="limit__text">
+                            <div>до <span>5 000</span> EUR / мес</div>
+                          </td>
+                          <td class="limit__text">
+                            <div>от <span>5 000</span> EUR до <span>10 000</span> / мес</div>
+                          </td>
+                          <td class="limit__text">
+                            <div>от <span>10 000</span> EUR до <span>20 000</span> / мес</div>
+                          </td>
+                        </tr>
+
+                        <tr class="limit__row">
+                          <th class="limit__name"><span>POS транзакции в день</span></th>
+                          <td class="limit__text">
+                            <div><span>2 500</span> EUR</div>
+                          </td>
+                          <td class="limit__text">
+                            <div><span>5 000</span> EUR</div>
+                          </td>
+                          <td class="limit__text">
+                            <div><span>7 500</span> EUR</div>
+                          </td>
+                        </tr>
+
+                        <tr class="limit__row">
+                          <th class="limit__name"><span>POS транзакции в месяц</span></th>
+                          <td class="limit__text">
+                            <div><span>5 000</span> EUR</div>
+                          </td>
+                          <td class="limit__text">
+                            <div><span>10 000</span> EUR</div>
+                          </td>
+                          <td class="limit__text">
+                            <div><span>20 000</span> EUR</div>
+                          </td>
+                        </tr>
+
+                        <tr class="limit__row">
+                          <th class="limit__name"><span>Онлайн транзакции в день</span></th>
+                          <td class="limit__text">
+                            <div><span>2 500</span> EUR</div>
+                          </td>
+                          <td class="limit__text">
+                            <div><span>5 000</span> EUR</div>
+                          </td>
+                          <td class="limit__text">
+                            <div><span>7 500</span> EUR</div>
+                          </td>
+                        </tr>
+
+                        <tr class="limit__row">
+                          <th class="limit__name"><span>Онлайн транзакции в месяц</span></th>
+                          <td class="limit__text">
+                            <div><span>5 000</span> EUR</div>
+                          </td>
+                          <td class="limit__text">
+                            <div><span>10 000</span> EUR</div>
+                          </td>
+                          <td class="limit__text">
+                            <div><span>20 000</span> EUR</div>
+                          </td>
+                        </tr>
+                      </table>
+
+                      <p class="limit__info">
+                        * Увеличение лимитов происходит после согласования с AML по запросу пользователя.
+                      </p>
+
+                      <button class="accounts__button tarlim__button" type="button"><span class="accounts__button-text">Скрыть Тарифы и лимиты</span>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="accounts__card-requisites requisites">
+                    <h4 class="requisites__title">Реквизиты</h4>
+
+                    <div class="requisites__items">
+                      <div class="requisites__item">
+                        <div class="requisites__name">Номер карты:</div>
+                        <div class="requisites__value">1234 5678 9000 0000</div>
+                      </div>
+
+                      <div class="requisites__item">
+                        <div class="requisites__name">Срок действия:</div>
+                        <div class="requisites__value">08/25</div>
+                      </div>
+
+                      <div class="requisites__item">
+                        <div class="requisites__name">Статус:</div>
+                        <div class="requisites__value">Активна</div>
+                      </div>
+
+                      <div class="requisites__item">
+                        <div class="requisites__name">CVV</div>
+                        <div class="requisites__value">777</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li class="accounts__card accounts__card&#45;&#45;special">
+                <img class="accounts__card-img" src="images/cards/2.png" alt="Карта">
+                <div class="accounts__card-wrap">
+                  <div class="accounts__card-box">
+                    <div class="accounts__card-left">
+                      <h4 class="accounts__card-title">EUR Virtual #1</h4>
+
+                      <div class="accounts__card-text">
+                        <p>Срок действия: 06 / 2024</p>
+                        <p>1234 **** **** 0000</p>
+                      </div>
+                    </div>
+
+                    <div class="accounts__card-right">
+                      <div class="accounts__card-price accounts__card-price&#45;&#45;euro">1700 <span>EUR</span></div>
+
+                      <a class="accounts__card-text lock" href="#">Заблокировать</a>
+                    </div>
+                  </div>
+
+                  <div class="accounts__card-buttons">
+                    <a class="accounts__card-btn" href="refill-ru.html">Пополнить</a>
+                    <div class="accounts__card-drop tarlim">Тарифы и лимиты</div>
+                    <div class="accounts__card-drop requisites__button">Реквизиты</div>
+                  </div>
+
+                  <div class="accounts__card-tarlim">
+                    <div class="accounts__card-tariff tariff">
+                      <h4 class="tariff__title">Тарифы</h4>
+
+                      <div class="tariff__items">
+                        <div class="tariff__subtitle">Выпуск и доставка карты</div>
+
+                        <div class="tariff__item">
+                          <div class="tariff__text">Выпуск карты</div>
+                          <div class="tariff__price"><span>5</span> EUR</div>
+                        </div>
+
+                        <div class="tariff__item">
+                          <div class="tariff__text">Доставка карты</div>
+                          <div class="tariff__price"><span>10</span> EUR</div>
+                        </div>
+
+                        <div class="tariff__item">
+                          <div class="tariff__text">Верификация держателя карт (KYC)</div>
+                          <div class="tariff__price"><span>2.50</span> EUR</div>
+                        </div>
+                      </div>
+
+                      <div class="tariff__items">
+                        <div class="tariff__subtitle">Обслуживание карты</div>
+
+                        <div class="tariff__item">
+                          <div class="tariff__text">Выпуск карты</div>
+                          <div class="tariff__price"><span>3</span> EUR</div>
+                        </div>
+
+                        <div class="tariff__item">
+                          <div class="tariff__text">Доставка карты</div>
+                          <div class="tariff__price"><span>1</span> EUR</div>
+                        </div>
+
+                        <div class="tariff__item">
+                          <div class="tariff__text">Верификация держателя карт (KYC)</div>
+                          <div class="tariff__price"><span>2% + 2</span> EUR</div>
+                        </div>
+
+                        <div class="tariff__item">
+                          <div class="tariff__text">Выпуск карты</div>
+                          <div class="tariff__price"><span>0.25</span> EUR</div>
+                        </div>
+
+                        <div class="tariff__item">
+                          <div class="tariff__text">Доставка карты</div>
+                          <div class="tariff__price"><span>30</span> EUR</div>
+                        </div>
+
+                        <div class="tariff__item">
+                          <div class="tariff__text">Верификация держателя карт (KYC)</div>
+                          <div class="tariff__price"><span>1%</span> EUR</div>
+                        </div>
+
+                        <div class="tariff__item">
+                          <div class="tariff__text">Верификация держателя карт (KYC)</div>
+                          <div class="tariff__price"><span>2%</span> EUR</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accounts__card-limit limit">
+                      <h4 class="limit__title">Лимиты</h4>
+
+                      <table class="limit__table">
+                        <tr class="limit__row">
+                          <th></th>
+                          <th class="limit__head">
+                            <div>Level 1</div>
+                          </th>
+                          <th class="limit__head">
+                            <div>Level 2 *</div>
+                          </th>
+                          <th class="limit__head">
+                            <div>Level 3 *</div>
+                          </th>
+                        </tr>
+
+                        <tr class="limit__row">
+                          <th class="limit__name"><span>Оборот по карте</span></th>
+                          <td class="limit__text">
+                            <div>до <span>5 000</span> EUR / мес</div>
+                          </td>
+                          <td class="limit__text">
+                            <div>от <span>5 000</span> EUR до <span>10 000</span> / мес</div>
+                          </td>
+                          <td class="limit__text">
+                            <div>от <span>10 000</span> EUR до <span>20 000</span> / мес</div>
+                          </td>
+                        </tr>
+
+                        <tr class="limit__row">
+                          <th class="limit__name"><span>POS транзакции в день</span></th>
+                          <td class="limit__text">
+                            <div><span>2 500</span> EUR</div>
+                          </td>
+                          <td class="limit__text">
+                            <div><span>5 000</span> EUR</div>
+                          </td>
+                          <td class="limit__text">
+                            <div><span>7 500</span> EUR</div>
+                          </td>
+                        </tr>
+
+                        <tr class="limit__row">
+                          <th class="limit__name"><span>POS транзакции в месяц</span></th>
+                          <td class="limit__text">
+                            <div><span>5 000</span> EUR</div>
+                          </td>
+                          <td class="limit__text">
+                            <div><span>10 000</span> EUR</div>
+                          </td>
+                          <td class="limit__text">
+                            <div><span>20 000</span> EUR</div>
+                          </td>
+                        </tr>
+
+                        <tr class="limit__row">
+                          <th class="limit__name"><span>Онлайн транзакции в день</span></th>
+                          <td class="limit__text">
+                            <div><span>2 500</span> EUR</div>
+                          </td>
+                          <td class="limit__text">
+                            <div><span>5 000</span> EUR</div>
+                          </td>
+                          <td class="limit__text">
+                            <div><span>7 500</span> EUR</div>
+                          </td>
+                        </tr>
+
+                        <tr class="limit__row">
+                          <th class="limit__name"><span>Онлайн транзакции в месяц</span></th>
+                          <td class="limit__text">
+                            <div><span>5 000</span> EUR</div>
+                          </td>
+                          <td class="limit__text">
+                            <div><span>10 000</span> EUR</div>
+                          </td>
+                          <td class="limit__text">
+                            <div><span>20 000</span> EUR</div>
+                          </td>
+                        </tr>
+                      </table>
+
+                      <p class="limit__info">
+                        * Увеличение лимитов происходит после согласования с AML по запросу пользователя.
+                      </p>
+
+                      <button class="accounts__button tarlim__button" type="button"><span class="accounts__button-text">Скрыть Тарифы и лимиты</span>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="accounts__card-requisites requisites">
+                    <h4 class="requisites__title">Реквизиты</h4>
+
+                    <div class="requisites__items">
+                      <div class="requisites__item">
+                        <div class="requisites__name">Номер карты:</div>
+                        <div class="requisites__value">1234 5678 9000 0000</div>
+                      </div>
+
+                      <div class="requisites__item">
+                        <div class="requisites__name">Срок действия:</div>
+                        <div class="requisites__value">08/25</div>
+                      </div>
+
+                      <div class="requisites__item">
+                        <div class="requisites__name">Статус:</div>
+                        <div class="requisites__value">Активна</div>
+                      </div>
+
+                      <div class="requisites__item">
+                        <div class="requisites__name">CVV</div>
+                        <div class="requisites__value">777</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="wow animate__animated animate__fadeIn accounts__operations">
+          <h3 class="accounts__title title">История операций</h3>
+
+          <div class="accounts__operations-filter filter">
+            <form class="filter__form" action="#">
+              <div class="filter__inner">
+                <div class="filter__left">
+                  <div class="filter__box">
+                    <label class="filter__label">Период</label>
+                    <select class="info-form__select">
+                      <option>Последние 7 дней</option>
+                      <option>Последние 10 дней</option>
+                      <option>Последние 14 дней</option>
+                    </select>
+                  </div>
+
+                  <div class="filter__box filter__box--select">
+                    <label class="filter__label">Счёт</label>
+                    <select class="info-form__select">
+                      <option>Все счета</option>
+                      <option>448 EUR</option>
+                      <option>13 700 USD</option>
+                      <option>24 850 RUR</option>
+                      <option>0,07 BTC</option>
+                      <option>0,3 ETH</option>
+                      <option>130 USDT ERC20</option>
+                      <option>2 BNB</option>
+                      <option>349 USDT TRC20</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="filter__right">
+                  <div class="filter__box">
+                    <label class="filter__label">По дате</label>
+                    <div class="filter__selects">
+                      <div class="filter__select-date">
+                        <input class="filter__select filter__select&#45;&#45;date" id="datepicker1" type="text" value="12.07.2021">
+                      </div>
+
+                      <div class="filter__select-date">
+                        <input class="filter__select filter__select&#45;&#45;date" id="datepicker2" type="text" value="19.07.2021">
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="filter__box">
+                    <label class="filter__label">Корреспондент</label>
+                    <input class="filter__input" type="text">
+                  </div>
+                </div>
+              </div>
+
+              <div class="filter__status">
+                <div class="filter__status-title">Статус операции</div>
+
+                <div class="filter__checkboxes">
+                  <label class="filter__checkbox-label">
+                    <div class="filter__wrap">
+                      <input class="filter__checkbox-ill" type="checkbox" checked>
+                      <span class="filter__checkbox"></span>
+                    </div>
+
+                    <span class="filter__checkbox-text">Все</span>
+                  </label>
+
+                  <label class="filter__checkbox-label">
+                    <div class="filter__wrap">
+                      <input class="filter__checkbox-ill" type="checkbox">
+                      <span class="filter__checkbox"></span>
+                    </div>
+
+                    <span class="filter__checkbox-text">Исполненные</span>
+                  </label>
+
+                  <label class="filter__checkbox-label">
+                    <div class="filter__wrap">
+                      <input class="filter__checkbox-ill" type="checkbox">
+                      <span class="filter__checkbox"></span>
+                    </div>
+
+                    <span class="filter__checkbox-text">Отмененные</span>
+                  </label>
+
+                  <label class="filter__checkbox-label">
+                    <div class="filter__wrap">
+                      <input class="filter__checkbox-ill" type="checkbox">
+                      <span class="filter__checkbox"></span>
+                    </div>
+
+                    <span class="filter__checkbox-text">В обработке</span>
+                  </label>
+                </div>
+              </div>
+
+              <button class="filter__button" type="submit">Применить фильтр</button>
+            </form>
+          </div>
+
+          <ul class="accounts__operations-items">
+            <li class="accounts__operations-item">
+              <div class="accounts__operations-title">Дата</div>
+              <div class="accounts__operations-title">Тип операции</div>
+              <div class="accounts__operations-title">Корреспондент</div>
+              <div class="accounts__operations-title">Сумма</div>
+              <div class="accounts__operations-title">Статус</div>
+            </li>
+
+            <li class="accounts__operations-item">
+              <div class="accounts__operations-text">10 Июля, 12:30</div>
+              <div class="accounts__operations-text">Внутренняя транзакция</div>
+              <div class="accounts__operations-text">H907061936736</div>
+              <div class="accounts__operations-text">300 USD</div>
+              <div class="accounts__operations-text">Исполнено</div>
+            </li>
+
+            <li class="accounts__operations-item">
+              <div class="accounts__operations-text">4 Июля, 22:15</div>
+              <div class="accounts__operations-text">Mastercard</div>
+              <div class="accounts__operations-text">TheKalibris</div>
+              <div class="accounts__operations-text">50 EUR</div>
+              <div class="accounts__operations-text">Исполнено</div>
+            </li>
+
+            <li class="accounts__operations-item">
+              <div class="accounts__operations-text">10 Июля, 12:30</div>
+              <div class="accounts__operations-text">Внутренняя транзакция</div>
+              <div class="accounts__operations-text">H907061936736</div>
+              <div class="accounts__operations-text">300 USD</div>
+              <div class="accounts__operations-text">Исполнено</div>
+            </li>
+
+            <li class="accounts__operations-item">
+              <div class="accounts__operations-text">4 Июля, 22:15</div>
+              <div class="accounts__operations-text">Mastercard</div>
+              <div class="accounts__operations-text">TheKalibris</div>
+              <div class="accounts__operations-text">50 EUR</div>
+              <div class="accounts__operations-text">Исполнено</div>
+            </li>
+          </ul>
+
+          <div class="accounts__button" id="filter-button"><span class="accounts__button-text">Найти операцию</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer footer--ru">
+  <div class="container">
+    <div class="footer__inner">
+      <a class="footer__logo" href="index-ru.html">
+        <img class="footer__logo-img" src="images/logo.svg" alt="Logotype">
+        <span class="footer__logo-name">TheKalibris</span>
+      </a>
+
+      <div class="footer__content">
+        <ul class="footer__list">
+          <li class="footer__item">
+            <a class="footer__link" href="index-ru.html">Главная</a>
+          </li>
+
+          <li class="footer__item">
+            <a class="footer__link" href="how-work-ru.html">Информация</a>
+          </li>
+
+          <li class="footer__item">
+            <a class="footer__link" href="about-ru.html">О компании</a>
+          </li>
+
+          <li class="footer__item">
+            <a class="footer__link" href="contact-ru.html">Контакты</a>
+          </li>
+
+          <li class="footer__item">
+            <a class="footer__link" href="why-us-ru.html">Преимущества</a>
+          </li>
+
+          <li class="footer__item">
+            <a class="footer__link" href="prepaid-card-ru.html">Дебетовая карта</a>
+          </li>
+
+          <li class="footer__item">
+            <a class="footer__link" href="fees-ru.html">Комиссия</a>
+          </li>
+        </ul>
+
+        <div class="footer__contact">
+          <div class="footer__contact-item">
+            <span>Свяжитесь с нами:</span>
+            <a href="mailto:Support@thekalibris.com">Support@thekalibris.com</a>
+          </div>
+
+          <div class="footer__contact-item">
+            <span>Рабочее время:</span>
+            9:00 - 23:00 (каждый день, без выходных)
+          </div>
+
+          <div class="footer__contact-item">
+            <span>TheKalibris © Все права защищены</span>
+            2015-2021
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+    $(function () {
+        $.datepicker.setDefaults($.datepicker.regional['ru']);
+        $('#datepicker1, #datepicker2').datepicker({
+            showOn: "button",
+            buttonImage: "images/arrow-down.svg",
+            buttonImageOnly: true,
+        });
+    });
+</script>
+</body>
+</html>

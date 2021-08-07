@@ -1,0 +1,317 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="css/main.min.css">
+
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.1/i18n/jquery-ui-i18n.min.js"></script>
+
+  <script src="js/main.min.js" defer></script>
+
+  <title>TheKalibris</title>
+</head>
+<body>
+<header class="wow animate__animated animate__fadeInDown header header--account">
+  <div class="container">
+    <div class="animate__animated animate__fadeInDown animate__fast header__top">
+      <nav class="menu menu--ru menu--account">
+        <a class="logo" href="account-ru.html">
+          <img class="logo__image" src="images/logo.svg" alt="Logotype">
+          <span class="logo__name">TheKalibris</span>
+        </a>
+
+        <div class="menu__wrapper">
+          <span class="menu__burger"></span>
+
+          <ul class="menu__list">
+            <li class="menu__item">
+              <a class="menu__link" href="account-ru.html">Мои счета</a>
+            </li>
+
+            <li class="menu__item">
+              <a class="menu__link" href="cards-ru.html">Карты</a>
+            </li>
+
+            <li class="menu__item">
+              <a class="menu__link" href="refill-ru.html">Пополнение счета</a>
+            </li>
+
+            <li class="menu__item">
+              <a class="menu__link" href="#">Переводы</a>
+            </li>
+
+            <li class="menu__item">
+              <a class="menu__link" href="exchange-ru.html">Обмен валют</a>
+            </li>
+
+            <li class="menu__item">
+              <a class="menu__link" href="history-ru.html">История операций</a>
+            </li>
+
+            <li class="menu__item menu__item--last">
+              <a class="menu__link" href="payments-ru.html">Прием платежей</a>
+            </li>
+
+            <li class="menu__speeches">
+              <a class="menu__speech" href="#">En</a>
+              <a class="menu__speech" href="#">He</a>
+              <a class="menu__speech" href="#">Ru</a>
+            </li>
+          </ul>
+
+          <div class="menu__settings">
+            <button class="menu__user" type="button">User123</button>
+
+            <ul class="menu__settings-list">
+              <li class="menu__settings-listItem">
+                <a href="verification-ru.html" class="menu__settings-listLink">Верификация</a>
+              </li>
+
+              <li class="menu__settings-listItem">
+                <a href="change-password-ru.html" class="menu__settings-listLink">Смена пароля</a>
+              </li>
+
+              <li class="menu__settings-listItem">
+                <a href="safety-settings-ru.html" class="menu__settings-listLink">Настройка безопасности</a>
+              </li>
+
+              <li class="menu__settings-listItem">
+                <a href="authorization-history-ru.html" class="menu__settings-listLink">История авторизаций</a>
+              </li>
+
+              <li class="menu__settings-listItem exit">
+                <a href="#" class="menu__settings-listLink">Выход</a>
+              </li>
+            </ul>
+          </div>
+
+          <select class="menu__langs">
+            <option class="menu__lang" data-ref="#">En</option>
+            <option class="menu__lang" data-ref="#" selected>Ru</option>
+            <option class="menu__lang" data-ref="#">He</option>
+          </select>
+        </div>
+      </nav>
+    </div>
+  </div>
+</header>
+
+<main class="main">
+
+  <section class="verification">
+    <div class="container">
+      <div class="verification__inner">
+        <h3 class="title verification__title">Верификация</h3>
+        <form class="info-form" action="#">
+          <div class="info-form__block person-data__block">
+            <h4 class="info-form__block-title person-data__block-title">Личные данные</h4>
+            <p class="info-form__block-subtitle person-data__block-subtitle">
+              Для оформления карты потребуется загранпаспорт или иной документ международного образца
+            </p>
+            <div class="info-form__items">
+              <div class="info-form__item">
+                <p class="info-form__item-text">Имя*</p>
+                <div class="info-form__input-box info-form__input-box--person">
+                  <input class="info-form__input" type="text" value="Vasiliy">
+                </div>
+              </div>
+              <div class="info-form__item">
+                <p class="info-form__item-text">Фамилия*</p>
+                <div class="info-form__input-box info-form__input-box--person">
+                  <input class="info-form__input" type="text" value="Pupkin">
+                </div>
+              </div>
+              <div class="info-form__item">
+                <p class="info-form__item-text">Отчество*</p>
+                <div class="info-form__input-box info-form__input-box--person">
+                  <input class="info-form__input" type="text" value="Pertovich">
+                </div>
+              </div>
+              <div class="info-form__item">
+                <p class="info-form__item-text">Дата рождения*</p>
+                <div class="info-form__input-box info-form__input-box--date">
+                  <input class="info-form__input" type="text" value="12.05.1990">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="info-form__block contacts-data__block">
+            <h4 class="info-form__block-title contacts-data__block-title">Контактные данные</h4>
+            <div class="info-form__items">
+              <div class="info-form__item">
+                <p class="info-form__item-text">Телефон*</p>
+                <div class="info-form__input-box info-form__input-box--tel">
+                  <input class="info-form__input" type="tel" value="+7 913 825 70 50">
+                </div>
+              </div>
+              <div class="info-form__item">
+                <p class="info-form__item-text">E-mail*</p>
+                <div class="info-form__input-box info-form__input-box--email">
+                  <input class="info-form__input" type="email" value="pupkin@gmail.com">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="info-form__block delivery-address__block">
+            <h4 class="info-form__block-title delivery-address__block-title">Адрес доставки</h4>
+            <p class="info-form__block-subtitle delivery-address__block-subtitle">
+              Заполнените все на латинском языке
+            </p>
+            <div class="info-form__addresses">
+              <label class="info-form__address">
+                <div class="info-form__address-box">
+                  <input class="info-form__address-input" type="radio" name="address1" checked>
+                  <span class="info-form__address-checkbox"></span>
+                </div>
+                <p class="info-form__address-text">Адрес 1</p>
+              </label>
+              <label class="info-form__address">
+                <div class="info-form__address-box">
+                  <input class="info-form__address-input" type="radio" name="address1">
+                  <span class="info-form__address-checkbox"></span>
+                </div>
+                <p class="info-form__address-text">Адрес 2</p>
+              </label>
+              <label class="info-form__address">
+                <div class="info-form__address-box">
+                  <input class="info-form__address-input" type="radio" name="address1">
+                  <span class="info-form__address-checkbox"></span>
+                </div>
+                <p class="info-form__address-text">Адрес 3</p>
+              </label>
+              <label class="info-form__address">
+                <div class="info-form__address-box">
+                  <input class="info-form__address-input" type="radio" name="address1">
+                  <span class="info-form__address-checkbox"></span>
+                </div>
+                <p class="info-form__address-text">Адрес 4</p>
+              </label>
+              <label class="info-form__address">
+                <div class="info-form__address-box">
+                  <input class="info-form__address-input" type="radio" name="address1">
+                  <span class="info-form__address-checkbox"></span>
+                </div>
+                <p class="info-form__address-text">Адрес 5</p>
+              </label>
+            </div>
+            <div class="info-form__items">
+              <div class="info-form__item">
+                <p class="info-form__item-text">Страна / штат*</p>
+                <select class="info-form__select">
+                  <option value="">Russia</option>
+                  <option value="">Kazakhstan</option>
+                  <option value="">Mongolia</option>
+                </select>
+              </div>
+              <div class="info-form__item">
+                <p class="info-form__item-text">Город*</p>
+                <div class="info-form__input-box">
+                  <input class="info-form__input" type="text" value="Ryazan">
+                </div>
+              </div>
+              <div class="info-form__item">
+                <p class="info-form__item-text">Адрес*</p>
+                <div class="info-form__input-box">
+                  <input class="info-form__input" type="text" value="ul. Gorkogo, dom 34, kv. 16">
+                </div>
+              </div>
+              <div class="info-form__item">
+                <p class="info-form__item-text">Почтовый индекс*</p>
+                <div class="info-form__input-box">
+                  <input class="info-form__input" type="text" value="612002">
+                </div>
+              </div>
+            </div>
+
+            <button class="delivery-address__block-btn" type="button">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M8.5 5.2C8.5 4.92386 8.27614 4.7 8 4.7C7.72386 4.7 7.5 4.92386 7.5 5.2H8.5ZM7.5 10.8C7.5 11.0761 7.72386 11.3 8 11.3C8.27614 11.3 8.5 11.0761 8.5 10.8H7.5ZM10.8 8.5C11.0761 8.5 11.3 8.27614 11.3 8C11.3 7.72386 11.0761 7.5 10.8 7.5V8.5ZM5.2 7.5C4.92386 7.5 4.7 7.72386 4.7 8C4.7 8.27614 4.92386 8.5 5.2 8.5V7.5ZM7.5 5.2V8H8.5V5.2H7.5ZM7.5 8V10.8H8.5V8H7.5ZM8 8.5H10.8V7.5H8V8.5ZM8 7.5H5.2V8.5H8V7.5ZM14.5 8C14.5 11.5899 11.5899 14.5 8 14.5V15.5C12.1421 15.5 15.5 12.1421 15.5 8H14.5ZM8 14.5C4.41015 14.5 1.5 11.5899 1.5 8H0.5C0.5 12.1421 3.85786 15.5 8 15.5V14.5ZM1.5 8C1.5 4.41015 4.41015 1.5 8 1.5V0.5C3.85786 0.5 0.5 3.85786 0.5 8H1.5ZM8 1.5C11.5899 1.5 14.5 4.41015 14.5 8H15.5C15.5 3.85786 12.1421 0.5 8 0.5V1.5Z" fill="#F4545A"/>
+              </svg>
+              <span>Новый адрес</span>
+            </button>
+          </div>
+          <button class="info-form__continue-btn">Продолжить</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <section class="verification-status">
+    <div class="container">
+      <div class="verification-status__inner">
+        <h3 class="title verification-status__title">Верификация</h3>
+        <div class="verification-status__wrapper">
+          <h4 class="verification-status__text">Вы успешно прошли верификацию!</h4>
+          <a class="verification-status__btn" href="account-ru.html">На главную</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer footer--ru">
+  <div class="container">
+    <div class="footer__inner">
+      <a class="footer__logo" href="index-ru.html">
+        <img class="footer__logo-img" src="images/logo.svg" alt="Logotype">
+        <span class="footer__logo-name">TheKalibris</span>
+      </a>
+
+      <div class="footer__content">
+        <ul class="footer__list">
+          <li class="footer__item">
+            <a class="footer__link" href="index-ru.html">Главная</a>
+          </li>
+
+          <li class="footer__item">
+            <a class="footer__link" href="how-work-ru.html">Информация</a>
+          </li>
+
+          <li class="footer__item">
+            <a class="footer__link" href="about-ru.html">О компании</a>
+          </li>
+
+          <li class="footer__item">
+            <a class="footer__link" href="contact-ru.html">Контакты</a>
+          </li>
+
+          <li class="footer__item">
+            <a class="footer__link" href="why-us-ru.html">Преимущества</a>
+          </li>
+
+          <li class="footer__item">
+            <a class="footer__link" href="prepaid-card-ru.html">Дебетовая карта</a>
+          </li>
+
+          <li class="footer__item">
+            <a class="footer__link" href="fees-ru.html">Комиссия</a>
+          </li>
+        </ul>
+
+        <div class="footer__contact">
+          <div class="footer__contact-item">
+            <span>Свяжитесь с нами:</span>
+            <a href="mailto:Support@thekalibris.com">Support@thekalibris.com</a>
+          </div>
+
+          <div class="footer__contact-item">
+            <span>Рабочее время:</span>
+            9:00 - 23:00 (каждый день, без выходных)
+          </div>
+
+          <div class="footer__contact-item">
+            <span>TheKalibris © Все права защищены</span>
+            2015-2021
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
